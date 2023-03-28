@@ -7,7 +7,7 @@
 // ----------------------------------------------------------------
 
 #include "Game.h"
-#include "SDL/SDL_image.h"
+#include <SDL/SDL_image.h>
 #include <algorithm>
 #include "Actor.h"
 #include "SpriteComponent.h"
