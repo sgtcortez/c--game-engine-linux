@@ -9,7 +9,7 @@
 #include "LevelLoader.h"
 #include <fstream>
 #include <vector>
-#include <SDL/SDL.h>
+#include <SDL2/SDL.h>
 #include "Game.h"
 #include "Renderer.h"
 #include "Actor.h"

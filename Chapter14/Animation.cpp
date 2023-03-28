@@ -9,7 +9,7 @@
 #include "Animation.h"
 #include "Skeleton.h"
 #include <rapidjson/document.h>
-#include <SDL/SDL_log.h>
+#include <SDL2/SDL_log.h>
 #include "LevelLoader.h"
 
 bool Animation::Load(const std::string& fileName)

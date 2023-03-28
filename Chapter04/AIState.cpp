@@ -8,7 +8,7 @@
 
 #include "AIState.h"
 #include "AIComponent.h"
-#include <SDL/SDL_log.h>
+#include <SDL2/SDL_log.h>
 
 void AIPatrol::Update(float deltaTime)
 {

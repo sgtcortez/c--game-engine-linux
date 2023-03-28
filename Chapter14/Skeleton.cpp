@@ -8,7 +8,7 @@
 
 #include "Skeleton.h"
 #include <rapidjson/document.h>
-#include <SDL/SDL_log.h>
+#include <SDL2/SDL_log.h>
 #include "MatrixPalette.h"
 #include "LevelLoader.h"
 

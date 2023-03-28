@@ -11,7 +11,7 @@
 #include "Texture.h"
 #include "VertexArray.h"
 #include <rapidjson/document.h>
-#include <SDL/SDL_log.h>
+#include <SDL2/SDL_log.h>
 #include "Math.h"
 #include "LevelLoader.h"
 #include <fstream>
