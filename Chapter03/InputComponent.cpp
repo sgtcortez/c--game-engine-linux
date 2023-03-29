@@ -11,7 +11,6 @@
 
 InputComponent::InputComponent(class Actor* owner)
 :MoveComponent(owner)
-,mBackKey(0)
 ,mClockwiseKey(0)
 ,mCounterClockwiseKey(0)
 {
@@ -32,10 +31,15 @@ void InputComponent::ProcessInput(const uint8_t* keyState)
 		}
 	}
 
-	if (keyState[mBackKey])
+	for (auto back_key : mBackKeys)
 	{
-		forwardSpeed -= mMaxForwardSpeed;
+		if (keyState[back_key])
+		{
+			forwardSpeed -= mMaxForwardSpeed;
+			break;
+		}
 	}
+
 	SetForwardSpeed(forwardSpeed);
 
 	// Calculate angular speed for MoveComponent

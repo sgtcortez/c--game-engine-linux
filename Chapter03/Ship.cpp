@@ -25,6 +25,7 @@ Ship::Ship(Game* game)
 	ic->SetForwardKey(SDL_SCANCODE_W);
 	ic->SetForwardKey(SDL_SCANCODE_UP);
 	ic->SetBackKey(SDL_SCANCODE_S);
+	ic->SetBackKey(SDL_SCANCODE_DOWN);
 	ic->SetClockwiseKey(SDL_SCANCODE_A);
 	ic->SetCounterClockwiseKey(SDL_SCANCODE_D);
 	ic->SetMaxForwardSpeed(300.0f);
