@@ -23,6 +23,7 @@ Ship::Ship(Game* game)
 	// Create an input component and set keys/speed
 	InputComponent* ic = new InputComponent(this);
 	ic->SetForwardKey(SDL_SCANCODE_W);
+	ic->SetForwardKey(SDL_SCANCODE_UP);
 	ic->SetBackKey(SDL_SCANCODE_S);
 	ic->SetClockwiseKey(SDL_SCANCODE_A);
 	ic->SetCounterClockwiseKey(SDL_SCANCODE_D);

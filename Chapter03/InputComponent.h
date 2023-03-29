@@ -9,6 +9,7 @@
 #pragma once
 #include "MoveComponent.h"
 #include <cstdint>
+#include <vector>
 
 class InputComponent : public MoveComponent
 {
@@ -21,14 +22,14 @@ public:
 	// Getters/setters for private variables
 	float GetMaxForward() const { return mMaxForwardSpeed; }
 	float GetMaxAngular() const { return mMaxAngularSpeed; }
-	int GetForwardKey() const { return mForwardKey; }
+	//int GetForwardKey() const { return mForwardKey; }
 	int GetBackKey() const { return mBackKey; }
 	int GetClockwiseKey() const { return mClockwiseKey; }
 	int GetCounterClockwiseKey() const { return mCounterClockwiseKey; }
 
 	void SetMaxForwardSpeed(float speed) { mMaxForwardSpeed = speed; }
 	void SetMaxAngularSpeed(float speed) { mMaxAngularSpeed = speed; }
-	void SetForwardKey(int key) { mForwardKey = key; }
+	void SetForwardKey(int key) { mForwardKeys.push_back(key); }
 	void SetBackKey(int key) { mBackKey = key; }
 	void SetClockwiseKey(int key) { mClockwiseKey = key; }
 	void SetCounterClockwiseKey(int key) { mCounterClockwiseKey = key; }
@@ -37,7 +38,7 @@ private:
 	float mMaxForwardSpeed;
 	float mMaxAngularSpeed;
 	// Keys for forward/back movement
-	int mForwardKey;
+	std::vector<int> mForwardKeys;
 	int mBackKey;
 	// Keys for angular movement
 	int mClockwiseKey;
