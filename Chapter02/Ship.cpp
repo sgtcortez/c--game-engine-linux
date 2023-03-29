@@ -10,6 +10,8 @@
 #include "AnimSpriteComponent.h"
 #include "Game.h"
 
+using namespace std;
+
 Ship::Ship(Game* game)
 	:Actor(game)
 	,mRightSpeed(0.0f)
