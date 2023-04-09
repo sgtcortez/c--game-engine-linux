@@ -14,10 +14,14 @@ DEPS=\
 	Ship.o \
 	SpriteComponent.o \
 
-all: $(DEPS) Main.out
+all: $(DEPS) Main.out refactor_version
 
 Main.out: Main.cpp $(DEPS)
 	$(CXX) -o $@ $< $(LINKS) $(CXXFLAGS) $(DEPS)
 
+refactor_version:
+	$(MAKE) -C refactor -f Makefile
+
 clear:
 	@rm -Rf *.out *.o 2>/dev/null
+	$(MAKE) -C refactor -f Makefile clear
